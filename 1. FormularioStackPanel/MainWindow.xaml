@@ -1,27 +1,101 @@
-﻿<Window x:Class="_1.FormularioStackPanel.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:_1.FormularioStackPanel"
-        mc:Ignorable="d"
-        Title="Formulario StackPanel" Height="450" Width="800">
-    <StackPanel>
-        <StackPanel>
-            <Label>Nombre</Label>
-            <TextBox></TextBox>
+﻿<Window
+    x:Class="_1.FormularioStackPanel.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:_1.FormularioStackPanel"
+    mc:Ignorable="d"
+    Title="Formulario StackPanel"
+    Height="350"
+    Width="735"
+    MinWidth="550"
+    MaxWidth="900"
+    Icon="form.ico">
+
+    <StackPanel
+        Margin="10">
+        <StackPanel
+            Margin="0,0,0,20">
+            <StackPanel.Background>
+                <LinearGradientBrush
+                    EndPoint="0.5,1"
+                    StartPoint="0.5,0">
+                    <GradientStop
+                        Color="#FF1DB152"
+                        Offset="0" />
+                    <GradientStop
+                        Color="White"
+                        Offset="0.997" />
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label
+                FontSize="16"
+                FontWeight="Bold">
+                Nombre
+            </Label>
+            <TextBox
+                Margin="5,0,5,15" />
+
         </StackPanel>
-        <StackPanel>
-            <Label>Dirección</Label>
-            <TextBox></TextBox>
+        <StackPanel
+            Margin="0,0,0,20">
+            <StackPanel.Background>
+                <LinearGradientBrush
+                    EndPoint="0.5,1"
+                    StartPoint="0.5,0">
+                    <GradientStop
+                        Color="#FF65AEEE"
+                        Offset="0" />
+                    <GradientStop
+                        Color="White"
+                        Offset="1" />
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label
+                FontSize="16"
+                FontWeight="Bold">
+                Dirección
+            </Label>
+            <TextBox
+                Margin="5,0,5,15" />
         </StackPanel>
-        <StackPanel>
-            <Label>Correo electrónico</Label>
-            <TextBox></TextBox>
+        <StackPanel
+            Margin="0,0,0,20">
+            <StackPanel.Background>
+                <LinearGradientBrush
+                    EndPoint="0.5,1"
+                    StartPoint="0.5,0">
+                    <GradientStop
+                        Color="#FFE26B9D"
+                        Offset="0" />
+                    <GradientStop
+                        Color="White"
+                        Offset="1" />
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label
+                FontSize="16"
+                FontWeight="Bold">
+                Correo electrónico
+            </Label>
+            <TextBox
+                HorizontalAlignment="Left"
+                Width="600"
+                Margin="5,0,5,15" />
         </StackPanel>
-        <StackPanel Orientation="Horizontal">
-            <Button VerticalAlignment="Center">Aceptar</Button>
-            <Button HorizontalAlignment="Right">Cancelar</Button>
+        <StackPanel
+            Orientation="Horizontal"
+            HorizontalAlignment="Right">
+            <Button
+                Margin="0,0,10,0"
+                Width="100">Aceptar
+            </Button>
+            <Button
+                Width="100">Cancelar
+            </Button>
         </StackPanel>
     </StackPanel>
+
+
 </Window>
