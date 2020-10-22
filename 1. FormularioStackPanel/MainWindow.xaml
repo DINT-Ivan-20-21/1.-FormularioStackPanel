@@ -1,0 +1,27 @@
+﻿<Window x:Class="_1.FormularioStackPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1.FormularioStackPanel"
+        mc:Ignorable="d"
+        Title="Formulario StackPanel" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel>
+            <Label>Nombre</Label>
+            <TextBox></TextBox>
+        </StackPanel>
+        <StackPanel>
+            <Label>Dirección</Label>
+            <TextBox></TextBox>
+        </StackPanel>
+        <StackPanel>
+            <Label>Correo electrónico</Label>
+            <TextBox></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button VerticalAlignment="Center">Aceptar</Button>
+            <Button HorizontalAlignment="Right">Cancelar</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
